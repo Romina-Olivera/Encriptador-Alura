@@ -1,14 +1,65 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Encriptador - Alura ONE</title>
-    <link rel="stylesheet" href="css/reset.css">
-    <link rel="stylesheet" href="css/style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/reset.css">
+  <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,300;1,300&family=Montserrat:wght@600&family=Quicksand&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <title>Encriptador - Alura</title>
 </head>
+
 <body>
-    
-    
+
+  <header class="header">
+    <nav class="nav">
+      <div class="logo">
+        <a href="https://www.aluracursos.com/" target="_blank">
+          <img src="assets/logo.svg" alt="Logo Alura" class="logo__image">
+        </a>
+      </div>
+    </nav>
+    <h1 class="header__title">Encriptador Alura</h1>
+  </header>
+
+  <main>
+    <section class="left-section">
+      <textarea id="text-input" class="input-text" placeholder="Ingrese el texto aquí" autofocus></textarea>
+      <div class="warning">
+        <img src="assets/warning-icon.svg" alt="Icono de advertencia" class="warning__icon">
+        <p class="warning__text">Solo se admiten letras minúsculas, sin acentos ni caracteres especiales</p>
+      </div>
+      <div class="btn-group">
+        <button class="btn" onclick="btnEncriptar()">Encriptar</button>
+        <button class="btn" onclick="btnDesencriptar()">Desencriptar</button>
+        <button class="btn" onclick="pegar()">Pegar</button>
+      </div>
+    </section>
+
+    <section class="right-section">
+      <textarea id="text-output" class="output-text"></textarea>
+      <div class="btn-container">
+        <button class="btn btn--copy" onclick="copiar()">Copiar</button>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="footer__links">
+      <a href="https://github.com/Romina-Olivera" target="_blank">
+        <img src="assets/signo-de-github.png" alt="Logo de GitHub" class="footer__icon">
+      </a>
+      <a href="https://www.linkedin.com/in/romina-r-olivera/" target="_blank">
+        <img src="./assets/logotipo-de-linkedin.png" alt="Logo de LinkedIn" class="footer__icon">
+      </a>
+    </div>
+    <p class="footer__text">Diseñado por Romina Olivera 2024</p>
+  </footer>
+
+  <input type="text" id="myHiddenInput" style="display: none">
+
+  <script src="script.js"></script>
 </body>
+
 </html>
