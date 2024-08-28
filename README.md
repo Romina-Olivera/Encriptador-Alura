@@ -61,4 +61,4 @@ El objetivo de este proyecto era aplicar todos los conocimientos adquiridos dura
 
 Puedes ver la demostración de este proyecto en GitHub Pages:
 
-[Demo del proyecto en GitHub Pages](https://tuusuario.github.io/tu-proyecto/)
+[Demo del proyecto en GitHub Pages]([https://tuusuario.github.io/tu-proyecto/](https://romina-olivera.github.io/Encriptador-Alura/))
